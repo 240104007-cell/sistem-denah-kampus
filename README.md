@@ -25,3 +25,8 @@ Data gedung dan ruangan pada prototipe hanyalah data contoh, bukan data resmi ka
 
 ## Dokumen rancangan
 Lihat folder `docs/` untuk draf isi lembar jawaban dan diagram berbasis Mermaid.
+model:
+  default: "ag/claude-opus-4-6-thinking"
+  provider: "custom"
+  base_url: "http://127.0.0.1:20128/v1"
+  api_key: ${OPENAI_API_KEY}
