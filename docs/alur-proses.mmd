@@ -1,0 +1,10 @@
+flowchart TD
+    A([Mulai]) --> B[Pengguna membuka website]
+    B --> C[Masukkan kata kunci / pilih gedung]
+    C --> D{Data ditemukan?}
+    D -- Ya --> E[Tampilkan daftar ruangan yang cocok]
+    E --> F[Pilih ruangan]
+    F --> G[Tampilkan gedung, lantai, denah, fasilitas]
+    D -- Tidak --> H[Tampilkan pesan tidak ditemukan]
+    G --> I([Selesai])
+    H --> C

@@ -1,0 +1,34 @@
+erDiagram
+    GEDUNG ||--o{ LANTAI : memiliki
+    LANTAI ||--o{ RUANGAN : memuat
+    RUANGAN ||--o{ RUANGAN_FASILITAS : mempunyai
+    FASILITAS ||--o{ RUANGAN_FASILITAS : tercatat_pada
+    GEDUNG {
+        int id_gedung PK
+        varchar nama_gedung
+        varchar alamat
+        varchar deskripsi
+    }
+    LANTAI {
+        int id_lantai PK
+        int id_gedung FK
+        int nomor_lantai
+        varchar file_denah
+    }
+    RUANGAN {
+        int id_ruangan PK
+        int id_lantai FK
+        varchar kode_ruangan UK
+        varchar nama_ruangan
+        varchar deskripsi
+    }
+    FASILITAS {
+        int id_fasilitas PK
+        varchar nama_fasilitas
+        varchar deskripsi
+    }
+    RUANGAN_FASILITAS {
+        int id PK
+        int id_ruangan FK
+        int id_fasilitas FK
+    }

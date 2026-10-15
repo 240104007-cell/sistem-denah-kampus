@@ -1,0 +1,8 @@
+flowchart TB
+    U[Mahasiswa / Dosen / Pengunjung]
+    S((Sistem Informasi Denah dan Fasilitas Gedung Kampus))
+    A[Admin]
+    U -->|Kata kunci, pilihan gedung/lantai| S
+    S -->|Hasil pencarian, lokasi, fasilitas, denah| U
+    A -->|Data gedung, lantai, ruangan, fasilitas| S
+    S -->|Status perubahan data| A
