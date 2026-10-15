@@ -141,3 +141,7 @@
 - Tambahkan URL repository dan PR yang benar.
 - Tambahkan gambar diagram context, alur proses, ERD.
 - Pastikan seluruh klaim status sesuai hasil nyata.
+
+## Pengujian Sistem
+
+Pengujian dilakukan dengan mencoba pencarian ruangan berdasarkan kode, nama ruangan, gedung, dan lantai. Kata kunci yang tidak ditemukan juga diuji untuk memastikan sistem memberikan respons yang sesuai. Pengujian dilakukan melalui browser pada lingkungan lokal.
